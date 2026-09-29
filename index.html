@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — E-Learn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="index.html"><i class="bi bi-mortarboard-fill"></i> E-Learn</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="courses" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="my-courses" href="my-courses.html">My Courses</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="assignments" href="assignments.html">Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2 align-items-center">
+        <a class="btn btn-outline-light btn-sm" href="login.html">Login</a>
+        <a class="btn btn-gold btn-sm" href="register.html">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <h1>Learn at your own pace. Finish what you start.</h1>
+        <p class="lead">E-Learn organises your courses, study materials and assignments in one place, so you always know what to watch next and what is due.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="courses.html" class="btn btn-gold btn-lg">Explore Courses</a>
+          <a href="register.html" class="btn btn-outline-light btn-lg">Get Started</a>
+        </div>
+        <div class="row mt-5 g-4">
+          <div class="col-4 stat"><b>7</b><span>Courses</span></div>
+          <div class="col-4 stat"><b>1,200+</b><span>Students</span></div>
+          <div class="col-4 stat"><b>96%</b><span>Completion rate</span></div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="card shadow-lg border-0" style="border-radius:16px">
+          <div class="card-body p-4">
+            <h5 class="mb-3"><i class="bi bi-play-circle-fill text-teal" style="color:#1AA69B"></i> Continue Learning</h5>
+            <p class="small text-muted mb-1">Database Management Systems</p>
+            <div class="progress mb-3"><div class="progress-bar" style="width:70%"></div></div>
+            <p class="small text-muted mb-1">Web Development Bootcamp</p>
+            <div class="progress mb-3"><div class="progress-bar" style="width:45%"></div></div>
+            <p class="small text-muted mb-1">Java Programming Essentials</p>
+            <div class="progress"><div class="progress-bar" style="width:20%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="section-title">Featured courses</h2>
+  <p class="section-sub">A snapshot of what students are learning on E-Learn right now.</p>
+  <div class="row g-4" id="featuredCourses"></div>
+  <div class="text-center mt-4"><a href="courses.html" class="btn btn-outline-navy">View all courses</a></div>
+</section>
+
+<section class="py-5" style="background:#EEF3F8">
+  <div class="container">
+    <h2 class="section-title">Why choose E-Learn</h2>
+    <p class="section-sub">Built around how students actually study, not just what a platform can technically do.</p>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="card h-100 p-3 text-center border-0 shadow-sm">
+          <i class="bi bi-clock-history fs-2 mb-2" style="color:#1AA69B"></i>
+          <h6>Learn anytime</h6><p class="small text-muted mb-0">Pick up a lesson whenever you have ten free minutes.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card h-100 p-3 text-center border-0 shadow-sm">
+          <i class="bi bi-bar-chart-line fs-2 mb-2" style="color:#1AA69B"></i>
+          <h6>Track progress</h6><p class="small text-muted mb-0">See exactly how much of each course is left.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card h-100 p-3 text-center border-0 shadow-sm">
+          <i class="bi bi-journal-check fs-2 mb-2" style="color:#1AA69B"></i>
+          <h6>Practical assignments</h6><p class="small text-muted mb-0">Apply every module with a short graded task.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card h-100 p-3 text-center border-0 shadow-sm">
+          <i class="bi bi-person-workspace fs-2 mb-2" style="color:#1AA69B"></i>
+          <h6>Instructor-built</h6><p class="small text-muted mb-0">Courses written by faculty who teach these subjects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="section-title">How it works</h2>
+  <p class="section-sub">Three steps from browsing to your certificate of completion.</p>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="d-flex gap-3">
+        <div class="avatar-circle flex-shrink-0" style="width:56px;height:56px;font-size:1.2rem">1</div>
+        <div><h6>Create your account</h6><p class="small text-muted">Register in under a minute and pick your first course.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex gap-3">
+        <div class="avatar-circle flex-shrink-0" style="width:56px;height:56px;font-size:1.2rem">2</div>
+        <div><h6>Work through lessons</h6><p class="small text-muted">Watch, read and complete each module at your pace.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex gap-3">
+        <div class="avatar-circle flex-shrink-0" style="width:56px;height:56px;font-size:1.2rem">3</div>
+        <div><h6>Submit and track</h6><p class="small text-muted">Turn in assignments and watch your dashboard update.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" style="background:#EEF3F8">
+  <div class="container">
+    <h2 class="section-title">What students say</h2>
+    <div class="row g-4" id="testimonialsRow"></div>
+  </div>
+</section>
+
+<section class="container py-5 text-center">
+  <div class="card border-0 shadow-lg p-5" style="background:linear-gradient(135deg,#0F2B46,#0F7A72);border-radius:16px">
+    <h2 class="text-white">Ready to start your next course?</h2>
+    <p class="text-white-50">Join students already learning on E-Learn.</p>
+    <div><a href="register.html" class="btn btn-gold btn-lg">Create your free account</a></div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("testimonialsRow").innerHTML = MOCK_TESTIMONIALS.map(t => `
+    <div class="col-md-4">
+      <div class="card testimonial h-100 p-3">
+        <p class="small">&ldquo;${t.text}&rdquo;</p>
+        <div class="d-flex align-items-center gap-2 mt-3">
+          <div class="avatar-circle" style="width:40px;height:40px;font-size:.9rem">${t.name.split(" ").map(n=>n[0]).join("")}</div>
+          <div><div class="fw-semibold small">${t.name}</div><small class="text-muted">${t.role}</small></div>
+        </div>
+      </div>
+    </div>`).join("");
+});
+</script>
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5><i class="bi bi-mortarboard-fill"></i> E-Learn</h5>
+        <p class="small">A college project e-learning platform built with HTML5, CSS3, Bootstrap 5 and vanilla JavaScript, ready for a future Java Spring Boot + MySQL backend.</p>
+        <div class="social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h5>Explore</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Account</h5>
+        <ul class="list-unstyled">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-geo-alt"></i> Dept. of Computer Science, City College</li>
+          <li><i class="bi bi-envelope"></i> support@elearn.edu</li>
+          <li><i class="bi bi-telephone"></i> +91 90000 12345</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary mt-4">
+    <p class="small text-center mb-0">&copy; 2026 E-Learn. B.Sc. Computer Science college project.</p>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>
